@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Category project</title>
+    <!-- Tailwind script link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.5/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Nav section -->
+      <nav>
+        <div class="navbar bg-base-300 rounded-box">
+          <div class="flex-1 px-2 lg:flex-none">
+            <a class="text-lg font-bold">News category</a>
+          </div>
+          <div class="flex justify-end flex-1 px-2">
+            <div class="flex items-stretch">
+              <input
+                type="text"
+                placeholder="Type here"
+                class="input input-bordered w-full max-w-xs mr-4"
+              />
+              <a class="btn btn-ghost rounded-btn">Search</a>
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost rounded-btn"
+                  ><i class="fa-solid fa-bars"></i
+                ></label>
+                <ul
+                  tabindex="0"
+                  class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
+                >
+                  <li><a>Breaking News</a></li>
+                  <li><a>Sport News</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Tab bar -->
+      <div class="tab-container w-full">
+        <div
+          id="tab-container"
+          class="tabs p-5 w-96 mx-auto flex text-center justify-center"
+        >
+          <!-- <a class="tab">Breaking News</a>
+          <a class="tab tab-active">Regular News</a>
+          <a class="tab">International News</a>
+          <a class="tab">Sports</a> -->
+        </div>
+      </div>
+      <!-- for display the news create a card -->
+      <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- <div class="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </main>
+    <script src="js/style.js"></script>
+  </body>
+</html>
